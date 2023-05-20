@@ -10,7 +10,7 @@ import LoadingSpinner from './components/ui/LoadingSpinner';
 
 
 
-const QuoteDetail = React.lazy(() => import('./pages/NewQuote'));
+const QuoteDetail = React.lazy(() => import('./pages/QuoteDetail'));
 const NewQuote = React.lazy(() => import('./pages/NewQuote')); 
 const Layout = React.lazy(() => import('./components/layout/Layouot'));
 const NotFound = React.lazy(() => import('./pages/NotFound')); 
