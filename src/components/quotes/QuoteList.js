@@ -17,6 +17,7 @@ const sortQuotes = (quotes, ascending) => {
 
 const QuoteList = (props) => {
 
+
   const history = useHistory(); //so you can change the url
   const location = useLocation(); //so you can get the current url
 
@@ -39,10 +40,15 @@ const QuoteList = (props) => {
     //history.push(`${location.pathname}?sort=${(isSortingAscending ? 'desc' : 'asc')}`); //we are changing the url to include query parameters
   }
 
+  const refreshHandler = () => {
+    window.location.reload();
+  }
+
   return (
     <Fragment>
       <div className={classes.sorting}>
         <button onClick={changeSortingHandler}> Sort {isSortingAscending ? 'Descending' : 'Ascending'}</button>
+        <button onClick={refreshHandler}>Refresh</button>
       </div>
       <ul className={classes.list}>
         {sortedQuotes.map((quote) => (

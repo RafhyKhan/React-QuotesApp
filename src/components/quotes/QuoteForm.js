@@ -14,8 +14,18 @@ const QuoteForm = (props) => {
     event.preventDefault();
 
     const enteredAuthor = authorInputRef.current.value;
-    const enteredText = textInputRef.current.value;
+    var enteredTextValue = textInputRef.current.value;
+    enteredTextValue = String(enteredTextValue)
 
+    if (enteredTextValue.charAt(0) != `"`) { 
+      enteredTextValue = `"` + enteredTextValue; 
+    }
+
+    if (enteredTextValue.charAt(enteredTextValue.length-1) != `"`) {
+      enteredTextValue = enteredTextValue + `"`;
+    } 
+
+    const enteredText = enteredTextValue;
     // optional: Could validate here
 
     props.onAddQuote({ author: enteredAuthor, text: enteredText });
@@ -47,8 +57,8 @@ const QuoteForm = (props) => {
             <input type='text' id='author' ref={authorInputRef} />
           </div>
           <div className={classes.control}>
-            <label htmlFor='text'>Text</label>
-            <textarea id='text' rows='5' ref={textInputRef}></textarea>
+            <label htmlFor='text'>Text </label>
+            <textarea id='text' rows='5' ref={textInputRef} ></textarea>
           </div>
           <div className={classes.actions}>
             <button onClick={finishEnteringHandler} className='btn'>Add Quote</button>

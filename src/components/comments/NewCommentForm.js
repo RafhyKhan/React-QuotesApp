@@ -33,7 +33,7 @@ const NewCommentForm = (props) => {
     <form className={classes.form} onSubmit={submitFormHandler}>
       {status === 'pending' && <div className='centered'><LoadingSpinner/></div>}
       <div className={classes.control} onSubmit={submitFormHandler}>
-        <label htmlFor='comment'>Your Comment</label>
+        <label htmlFor='comment' >Your Comment</label>
         <textarea id='comment' rows='5' ref={commentTextRef}></textarea>
       </div>
       <div className={classes.actions}>
