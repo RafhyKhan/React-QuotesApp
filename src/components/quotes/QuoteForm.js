@@ -13,6 +13,7 @@ const QuoteForm = (props) => {
   function submitFormHandler(event) {
     event.preventDefault();
 
+    //automatic quotation adding
     const enteredAuthor = authorInputRef.current.value;
     var enteredTextValue = textInputRef.current.value;
     enteredTextValue = String(enteredTextValue)
