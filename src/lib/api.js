@@ -1,7 +1,7 @@
 
 
 
-//dummy backend
+//Dummy backend in use before GFirebase use
 
 
 const FIREBASE_DOMAIN = 'https://react-http-57c1f-default-rtdb.firebaseio.com';

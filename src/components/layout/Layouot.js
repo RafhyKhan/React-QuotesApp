@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 
 
 /*
-This is a wrapper componenet method, need props
+This is a wrapper componenet method, need props.
 We wil use props.children to wrap and display everything
 
 */

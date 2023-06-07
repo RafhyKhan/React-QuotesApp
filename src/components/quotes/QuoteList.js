@@ -27,7 +27,7 @@ const QuoteList = (props) => {
 
   const sortedQuotes = sortQuotes(props.quotes, isSortingAscending); 
   //calling function that sorts all quotes, based on asc or desc query params
-  //gives back array of objects
+  //gives re-arranged back array of objects
 
 
   const changeSortingHandler = () => {
@@ -41,7 +41,7 @@ const QuoteList = (props) => {
   }
 
   const refreshHandler = () => {
-    window.location.reload();
+    window.location.reload(); //Refreshes the page
   }
 
   return (

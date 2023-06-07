@@ -27,13 +27,13 @@ const QuoteForm = (props) => {
     } 
 
     const enteredText = enteredTextValue;
-    // optional: Could validate here
+    // Validate text here
 
     props.onAddQuote({ author: enteredAuthor, text: enteredText });
   }
 
   
-  const finishEnteringHandler = () => { //User has comeplted form, and must add quote and leave
+  const finishEnteringHandler = () => { //User has completed form, must add quote and leave
     setIsEntering(false); //user left form
   }
 

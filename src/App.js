@@ -15,7 +15,7 @@ const NewQuote = React.lazy(() => import('./pages/NewQuote'));
 const Layout = React.lazy(() => import('./components/layout/Layouot'));
 const NotFound = React.lazy(() => import('./pages/NotFound')); 
 const AllQuotes = React.lazy(() => import('./pages/AllQuotes')); 
-//downlaoding code only when needed
+//Downloading code only when needed
 //but while its downloading, we need fallback content to be shown!
 
 
@@ -24,7 +24,7 @@ function App() {
   //using exact prop, to stop it from ignoring sub-pages
   //creating a not found page, byseting route path='*', which all other urls no specified goes to Not found page
 
-  //Suspense tag is needed when using .lazy(), need falback
+  //Suspense tag is needed when using .lazy(), need fallback
   return (
     <Layout>
       <Suspense fallback={<div className='centered'><LoadingSpinner/></div>}>

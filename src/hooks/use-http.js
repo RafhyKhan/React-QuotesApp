@@ -2,7 +2,8 @@ import { useReducer, useCallback } from 'react';
 
 /*
 A bunch of HTP functions made to deal with the database
-
+An useHttp reducer makes it alot easier to use database management
+replicable code needed for mutiple sections of the app. 
 */
 
 function httpReducer(state, action) {
