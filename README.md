@@ -41,9 +41,9 @@ apps performance.
         </Switch>
       </Suspense>
 ```
-(Check out FULL App.js Code)[https://github.com/RafhyKhan/React-QuotesApp/blob/main/src/App.js]
+[Check out FULL App.js Code](https://github.com/RafhyKhan/React-QuotesApp/blob/main/src/App.js)
 
-
+---
 
 | Keyword | Description of use |
 | ------ | ----------- |
@@ -77,9 +77,9 @@ function httpReducer(state, action) {
   return state;
 }
 ```
-(Check out FULL use-http.js code)[https://github.com/RafhyKhan/React-QuotesApp/blob/main/src/hooks/use-http.js]
+[Check out FULL use-http.js code](https://github.com/RafhyKhan/React-QuotesApp/blob/main/src/hooks/use-http.js)
 
-
+---
 
 | Keyword | Description of use |
 | ------ | ----------- |
@@ -97,6 +97,9 @@ export async function getAllQuotes() {
 
   const transformedQuotes = [];
 
-
-(Check out FULL api.js code)[https://github.com/RafhyKhan/React-QuotesApp/blob/main/src/lib/api.js]
 ```
+[Check out FULL api.js code](https://github.com/RafhyKhan/React-QuotesApp/blob/main/src/lib/api.js)
+
+---
+
+## END of ReadMe File
