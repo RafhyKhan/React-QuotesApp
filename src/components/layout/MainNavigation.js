@@ -5,7 +5,11 @@ const MainNavigation = () => {
 
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>Great Quotes</div>
+            <div className={classes.logo}>
+                <ul>
+                    <li><NavLink to='/quotes' activeClassName={classes.active}>Great Quotes</NavLink></li>
+                </ul>
+            </div>
             <nav className={classes.nav}>
                 <ul>
                     <li><NavLink to='/quotes' activeClassName={classes.active}> All Quotes</NavLink></li>
