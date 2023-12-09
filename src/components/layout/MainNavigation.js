@@ -7,7 +7,7 @@ const MainNavigation = () => {
         <header className={classes.header}>
             <div className={classes.logo}>
                 <ul>
-                    <li><NavLink to='/quotes' activeClassName={classes.active}>Great Quotes</NavLink></li>
+                    <NavLink to='/quotes' activeClassName={classes.active}>Great Quotes</NavLink>
                 </ul>
             </div>
             <nav className={classes.nav}>
